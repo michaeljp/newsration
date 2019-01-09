@@ -1,0 +1,11 @@
+<h2>{{ feed.title }}</h2>
+<div class="feeds">
+  <ul>
+    {% for entry in feed.entries %}
+    <li><a href="{{ entry.url }}">{{ entry.title }} <span class="published">{{ entry.published }}<span></a><p>{{ entry.summary }}</p></li>
+    {% else %}
+    <li><em>No entries here so far</em>
+    {% endfor %}
+  </ul>
+  <a href="#">Back to top &#8593;</a>
+</div>

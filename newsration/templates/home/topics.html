@@ -1,0 +1,6 @@
+<ul class="navigation">
+  {% for topic in topics %}
+  <li><a href="{{ url_for('.source_feed', source=request_source, topic=topic.url) }}"
+         class="{{ 'active' if request_topic == topic.url }}">{{ topic.url }}</a></li>
+  {% endfor %}
+</ul>

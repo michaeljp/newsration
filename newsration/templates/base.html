@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NewsRation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
+</head>
+<body>
+  <div id="wrapper">
+    <ul class="navigation">
+      <li><a href="{{ url_for('home.index') }}" id="brand">NewsRation</a></li>
+      {% if sources %}
+      {% for source in sources %}
+      <li><a href="{{ url_for('home.source_feed', source=source.url) }}" class="{{ 'active' if request_source == source.url }}">{{ source.title }}</a></li>
+      {% endfor %}
+      {% endif %}
+      <li><a href="{{ url_for('settings.settings_index') }}">+more</a></li>
+    </ul>
+    {% block body %}{% endblock %}
+  </div>
+</body>
+</html>
