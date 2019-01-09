@@ -2,6 +2,9 @@ language: python
 python:
   - "3.6"
 install:
+  - pip install coverage coveralls
   - pip install -r requirements.txt
 script:
-  - python -m unittest discover
+  - coverage run --source newstext --branch -m unittest discover
+after_success:
+  - coveralls
