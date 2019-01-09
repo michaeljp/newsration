@@ -5,6 +5,6 @@ install:
   - pip install coverage coveralls
   - pip install -r requirements.txt
 script:
-  - coverage run --source newstext --branch -m unittest discover
+  - coverage run --source newsration --branch -m unittest discover
 after_success:
   - coveralls
