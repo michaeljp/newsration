@@ -1,0 +1,9 @@
+.idea/
+.DS_Store
+.vscode/
+.mypy_cache/
+*venv/
+*.log*
+*.pyc
+.coverage
+htmlcov/

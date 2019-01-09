@@ -1,0 +1,16 @@
+body { padding-bottom: 30px; font-family: Helmet, Freesans, Helvetica, Arial, sans-serif}
+.navigation { margin: 0.5em 0; line-height: 22px; padding: 0; }
+.navigation li { list-style-type: none; display: inline; }
+.navigation li:not(:first-child):before { content: " | "; }
+.navigation a { color: rgb(62, 67, 73); text-decoration: none; }
+a.active { text-decoration: underline; }
+.feeds ul { padding: 0; }
+.feeds ul li { list-style-type: none; margin-top: 0.5em; }
+.feeds a:link { color: rgb(62, 67, 73); text-decoration: none; font-size: 16px; line-height: 22px; font-weight: 700; }
+@media only screen and (min-width : 980px) {
+    #wrapper { width: 80%; margin: 0 auto; } }
+.feeds p { margin: 0; font-size: 16px; }
+.feeds p, .feeds a:visited { color: #828282; }
+.published { font-weight: 400; color: #828282; }
+#brand { color: #bb1919; }
+.loglist { font-family: 'Courier New', Courier, monospace }
