@@ -12,6 +12,10 @@ FEEDS = {
                 "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
             },
             "uk": {"title": "UK", "url": "http://feeds.bbci.co.uk/news/uk/rss.xml"},
+            "sport": {
+                "title": "Sport",
+                "url": "http://feeds.bbci.co.uk/sport/rss.xml",
+            },
             "technology": {
                 "title": "Technology",
                 "url": "http://feeds.bbci.co.uk/news/technology/rss.xml",
