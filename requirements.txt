@@ -2,7 +2,7 @@ atoma==0.0.17
 attrs==19.3.0
 Click==7.0
 defusedxml==0.6.0
-Flask==1.1.1
+Flask==2.3.2
 Flask-Caching==1.8.0
 itsdangerous==1.1.0
 Jinja2==2.11.3
